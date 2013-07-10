@@ -1,0 +1,164 @@
+// ==========================================================================
+// Typography mixins
+// ==========================================================================
+
+// Fonts
+// ==========================================================================
+#font {
+  #family {
+    .serif() {
+      font-family: @fontFamily-serif;
+    }
+    .sans-serif() {
+      font-family: @fontFamily-sans;
+    }
+    .monospace() {
+      font-family: @fontFamily-mono;
+    }
+  }
+  .shorthand(@size: @base-fontSize, @weight: normal, @lineHeight: @base-lineHeight) {
+    font-size: @size;
+    font-weight: @weight;
+    line-height: @lineHeight;
+  }
+  .serif(@size: @base-fontSize, @weight: normal, @lineHeight: @base-lineHeight) {
+    #font > #family > .serif;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+  .sans-serif(@size: @base-fontSize, @weight: normal, @lineHeight: @base-lineHeight) {
+    #font > #family > .sans-serif;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+  .monospace(@size: @base-fontSize, @weight: normal, @lineHeight: @base-lineHeight) {
+    #font > #family > .monospace;
+    #font > .shorthand(@size, @weight, @lineHeight);
+  }
+}
+
+
+// Typography related mixins
+// ==========================================================================
+
+.px-to-rem(@property, @px-size){
+  @rem-size: @px-size / 16;
+
+  ._px-to-rem(@px-size) when (@property = 'margin-top') {
+    margin-top: ~"@{px-size}px"; 
+    margin-top: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'margin-left') {
+    margin-left: ~"@{px-size}px"; 
+    margin-left: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'margin-bottom') {
+    margin-bottom: ~"@{px-size}px"; 
+    margin-bottom: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'margin-right') {
+    margin-right: ~"@{px-size}px"; 
+    margin-right: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'padding-top') {
+    padding-top: ~"@{px-size}px"; 
+    padding-top: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'padding-left') {
+    padding-left: ~"@{px-size}px"; 
+    padding-left: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'padding-bottom') {
+    padding-bottom: ~"@{px-size}px"; 
+    padding-bottom: ~"@{rem-size}rem";
+  }
+
+  ._px-to-rem(@px-size) when (@property = 'padding-right') {
+    padding-right: ~"@{px-size}px"; 
+    padding-right: ~"@{rem-size}rem";
+  }  
+  
+  ._px-to-rem(@px-size);
+}
+
+
+.font-size-rems(@px-size) {
+  @rem-size: @px-size / 16;
+  font-size: ~"@{px-size}px"; 
+  font-size: ~"@{rem-size}rem";
+}
+
+// Font Sizes (REMs with PX fallback for older browsers)
+.font-size(@px-size) {
+  @rem-size: @px-size / 16;
+  font-size: ~"@{px-size}px"; 
+  font-size: ~"@{rem-size}rem";
+}
+
+// Line Height Sizes (REMs with PX fallback for older browsers)
+.line-height(@px-size) {
+  @rem-size: @px-size / 16;
+  line-height: ~"@{px-size}px"; 
+  line-height: ~"@{rem-size}rem";
+}
+
+.font-size-ems(@target-px-size, @context-px-size:@base-font-size) {
+  font-size: (@target-px-size / @context-px-size) * 1em;
+}
+
+.font-face( @family-name, @font-path, @font-weight:normal, @font-style:normal, @include-svg:false ) when not (@include-svg) {
+  @font-face {
+      font-family: @family-name;
+      src: url('@{font-path}.eot');
+      src: url('@{font-path}.eot?#iefix') format('embedded-opentype'),
+           url('@{font-path}.woff') format('woff'),
+           url('@{font-path}.ttf') format('truetype');
+      font-weight: @font-weight;
+      font-style: @font-style;
+  }
+}
+
+.font-face( @family-name, @font-path, @font-weight:normal, @font-style:normal, @include-svg:false ) when (@include-svg) {
+  @font-face {
+      font-family: @family-name;
+      src: url('@{font-path}.eot');
+      src: url('@{font-path}.eot?#iefix') format('embedded-opentype'),
+           url('@{font-path}.woff') format('woff'),
+           url('@{font-path}.ttf') format('truetype'),
+           url('@{font-path}.svg#@{family-name}') format('svg');
+      font-weight: @font-weight;
+      font-style: @font-style;
+  }
+}
+
+// Wrap words
+.wrap-words() {
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+// Requires inline-block or block for proper styling
+.text-overflow() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Optional hyphenation
+// Sets how to split words to improve the layout of paragraphs
+.hyphens(@mode: auto) {
+  word-wrap: break-word;
+  -webkit-hyphens: @mode;
+     -moz-hyphens: @mode;
+      -ms-hyphens: @mode;
+       -o-hyphens: @mode;
+          hyphens: @mode;
+}

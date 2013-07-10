@@ -1,0 +1,14 @@
+{
+  "name": "site-adaptGrid",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components"
+  ],
+  "dependencies": {
+    "prelude": "https://github.com/amazingSurge/prelude.git",
+    "jquery": "~1.10.2",
+    "html5-boilerplate": "~4.2.0"
+  }
+}
