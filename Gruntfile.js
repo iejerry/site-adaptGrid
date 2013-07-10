@@ -21,6 +21,12 @@ module.exports = function(grunt) {
     //   }
     // },
 
+    // -- Clean Config ---------------------------------------------------------
+    clean: {
+        img : ['img/'],
+        css : ['css/'],
+    },
+
     // -- jshint config ----------------------------------------------------------
     jshint: {
       options: {
@@ -130,9 +136,36 @@ module.exports = function(grunt) {
 
         files: {
             expand: true,
-            src   : 'css/*.css',
+            src   : ['css/*.css', '!css/*-min.css'],
             ext   : '-min.css'
         }
+    },
+
+    // -- ImageMin Config --------------------------------------------------------
+    imagemin: {
+      dist: {
+        options: {
+          optimizationLevel: 0
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/img/',
+          src: ['**/*'],
+          dest: 'img/'
+        }]
+      }
+    },
+
+    // -- Text Replace Config --------------------------------------------------------
+    replace: {
+      html: {
+        src: ['src/*.html'],
+        dest: './',
+        replacements: [{ 
+          from: /\<!-- replace:css -->([\S\s]*?)<!-- endreplace -->/gm,
+          to: '    <link rel="stylesheet" href="css/style.css">'
+        }]
+      }
     },
 
     watch: {
@@ -151,12 +184,16 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
-  
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
+  grunt.loadNpmTasks('grunt-contrib-clean');
+  grunt.loadNpmTasks('grunt-text-replace');
 
   // Default task.
 
   grunt.registerTask('update', ['copy']);
-
-  grunt.registerTask('default', ['less', 'concat', 'cssmin']);
-
+  grunt.registerTask('css', ['clean:css', 'less', 'concat', 'cssmin']);
+  grunt.registerTask('img', ['clean:img', 'imagemin']);
+  grunt.registerTask('html', ['replace:html']);
+  
+  grunt.registerTask('default', ['css','img','html']);
 };
