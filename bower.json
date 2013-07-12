@@ -4,7 +4,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "components"
+    "components",
+    "bower_components",
+    "test",
+    "tests"
   ],
   "dependencies": {
     "prelude": "https://github.com/amazingSurge/prelude.git",

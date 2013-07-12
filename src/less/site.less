@@ -2,8 +2,6 @@
 // --------------------------------------------------
 @import "mixins.less";
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
-
 // Base
 // --------------------------------------------------
 .container {
@@ -32,16 +30,13 @@ code {
 	background-color: #feeeec;
 	background-color: rgba(245,89,70,0.1);
 	border: none;
-	.border-radius(3px);
 }
 // Form
 // --------------------------------------------------
 input {
-	margin-left: -1px;
 	color: #666;
 	text-indent: 10px;
 	border: 1px solid #ddd;
-	outline: none;
 	.border-radius(3px);
 	&:hover {
 		border-color: #bbb;
@@ -49,6 +44,13 @@ input {
 	&:focus {
 		border-color: #7ebdcb;
 	}
+}
+button {
+	color: #fff;
+	border: none;
+	padding: 0;
+	outline: none;
+	.border-radius(3px);
 }
 .switch {
 	position: relative;
@@ -133,9 +135,8 @@ input {
 // Header
 // --------------------------------------------------
 header[role="banner"] {
-	padding: 65px 0 130px 0;
+	padding: 65px 0;
 	background: url("../img/back.png") repeat-x 0 0;
-
 	h1 {
 		color: #000;
 		font-size: 90px;
@@ -155,8 +156,7 @@ header[role="banner"] {
 // Generator
 // --------------------------------------------------
 .generator {
-	position: relative;
-	padding: 20px 0 60px;
+	padding: 60px 0;
 }
 .generator-dimension {
 	position: relative;
@@ -166,44 +166,23 @@ header[role="banner"] {
 	padding: 0;
 	background-color: #e3dfd6;
 	.border-radius(5px);
-	
-}
-.generator-setting {
-	width: 23%;
-	& + ul {
-		border: none;
-		input {
-			width: 110px;
+	button {
+		position: absolute;
+		top: 32px;
+		left: 50%;
+		width: 186px;
+		height: 36px;
+		line-height: 36px;
+		margin-left: -93px;
+		background-color: #7ebdcb;
+		&:hover {
+			background-color: #8dcbda;
+		}
+		&:active {
+			background-color: #72b0be;
 		}
 	}
-	ul {
-		position: relative;
-		margin: 0;
-		padding: 0;
-		border-top: 1px solid #ddd;
-	}
-	li {
-		margin: 15px 0;
-		padding: 0;
-		list-style: none;
-	}
-	label {
-		display: inline-block;
-		width: 110px;
-		color: #222;
-	}
-	input {
-		width: 75px;
-		height: 30px;
-	}
-	button {
-		color: #fff;
-		text-align: center;
-		border: none;
-		padding: 0;
-		outline: none;
-		.border-radius(3px);
-	}
+	
 }
 .dimension-pointer {
 	position: absolute;
@@ -232,107 +211,103 @@ header[role="banner"] {
 }
 .dimension-pointer_active {
 	background-color: #ff6853;
-}
-.dimension-button {
-	position: absolute;
-	top: 32px;
-	left: 50%;
-	width: 186px;
-	height: 36px;
-	line-height: 36px;
-	margin-left: -93px;
-	background-color: #7ebdcb;
-	&:hover {
-		background-color: #8dcbda;
+	.dimension-tip {
+		display: block;
 	}
-	&:active {
-		background-color: #72b0be;
+}
+.generator-setting {
+	width: 23%;
+	overflow: hidden;
+	ul {
+		position: relative;
+		margin: 0;
+		border-top: 1px solid #ddd;
+		&:first-child {
+			border: none;
+			input {
+				width: 110px;
+			}
+		}
+	}
+	li {
+		margin: 15px 0;
+		padding: 0;
+		list-style: none;
+	}
+	label {
+		display: inline-block;
+		width: 110px;
+		color: #222;
+	}
+	input {
+		width: 75px;
+		height: 30px;
 	}
 }
 .generator-effect {
 	position: absolute;
-	top: 95px;
+	top: 170px;
 	right: 0;
 	width: 76%;
 }
 .generator-submit {
-	width: 23%;
 	margin-top: 30px;
+	overflow: hidden;
+	button {
+		float: left;
+		width: 49.9%;
+		height: 36px;
+		line-height: 36px;
+		text-transform: capitalize;
+	}
 }
-.generator-submit_update {
-	float: left;
-	width: 49.9%;
-	height: 36px;
-	line-height: 36px;
-	padding: 0;
-	color: #fff;
+.submit_update {
 	background-color: #7ecb8b;
-	border: none;
-	outline: none;
-	text-transform: capitalize;
-	.border-radius(3px);
 	&:hover {
-		color: #fff;
-		border: none;
 		background-color: #8ad897;
 	}
 	&:active {
 		background-color: #6fbc7d;
 	}
 }
-.generator-submit_delete {
-	width: 49.9%;
-	height: 36px;
-	line-height: 36px;
-	padding: 0;
+.submit_delete {
 	color: #555;
-	text-transform: capitalize;
-	border: none;
 	background-color: transparent;
 	&:hover {
 		color: #555;
-		border: none;
 	}
 }
 .download {
 	margin-top: 55px;
 	text-align: center;
-	.download-button {
+	button {
 		width: 25%;
 		height: 62px;
 		line-height: 62px;
 		margin: auto;
-		padding: 0;
-		color: #fff;
 		font-size: 30px;
 		text-transform: capitalize;
 		background-color: #ff6853;
-		border: none;
-		outline: none;
-		.border-radius(3px);
 		&:hover {
-			color: #fff;
-			border: none;
 			background-color: #ff765f;
 		}
 		&:active {
-			color: #fff;
-			border: none;
 			background-color: #eb644f;
 		}
 	}
 }
+
 // FAQ
 // --------------------------------------------------
 .faq {
-	.container {
-		padding: 30px 0;
-	}
 	background-color: #f8f7f2;
+	padding: 30px 0;
 }
+
+// Document
+// --------------------------------------------------
 .document {
 	padding: 30px 0 80px;
-	
 	.row {
 		margin-bottom: 15px;
 		p {
@@ -345,6 +320,9 @@ header[role="banner"] {
 		}
 	}
 }
+
+// Footer
+// --------------------------------------------------
 footer[role="contentinfo"] {
 	padding: 40px 0;
 	background-color: #222;

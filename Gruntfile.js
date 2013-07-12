@@ -71,8 +71,8 @@ module.exports = function(grunt) {
           src: [
               'build/common/reset.css',
               'build/common/typography.css',
-              'build/common/forms.css',
-              'build/components/buttons.css'
+              'build/common/forms-core.css',
+              'build/components/buttons-core.css'
           ],
           dest: 'src/css/'
         },
@@ -105,6 +105,7 @@ module.exports = function(grunt) {
     less: {
       site: {
         files: {
+          "src/css/grid.css": "src/less/grid.less",
           "src/css/site.css": "src/less/site.less"
         }
       },
@@ -118,10 +119,12 @@ module.exports = function(grunt) {
       },
       css: {
         src: [
+          'src/css/font.css',
           'src/css/reset.css',
           'src/css/typography.css',
-          'src/css/forms.css',
-          'src/css/buttons.css',
+          'src/css/forms-core.css',
+          'src/css/buttons-core.css',
+          'src/css/grid.css',
           'src/css/site.css'
         ],
         dest: 'css/style.css'
