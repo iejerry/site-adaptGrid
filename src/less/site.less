@@ -45,6 +45,15 @@ input {
 		border-color: #7ebdcb;
 	}
 }
+input[disabled] {
+	color: #aaa;
+	&:hover {
+		border-color: #ddd;
+	}
+	&:focus {
+		border-color: #ddd;
+	}
+}
 button {
 	color: #fff;
 	border: none;
@@ -281,7 +290,7 @@ header[role="banner"] {
 	margin-top: 55px;
 	text-align: center;
 	button {
-		width: 25%;
+		width: 248px;
 		height: 62px;
 		line-height: 62px;
 		margin: auto;
@@ -389,5 +398,41 @@ footer[role="contentinfo"] {
 		&:hover {
 			background-image: url("../img/github_hover.png");
 		}
+	}
+}
+
+// Media query
+// --------------------------------------------------
+@media only screen and (max-width: 980px) {
+	.container {
+		width: 880px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 690px;
+	}
+	.generator-setting {
+		width: 100%;
+		text-align: center;
+	}
+	.generator-effect {
+		position: relative;
+		top: 0;
+		left: 0;
+		margin-top: 30px;
+		width: 100%;
+	}
+	.producer {
+		width: 100%;
+	}
+	.share {
+		position: relative;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.container {
+		width: 300px;
 	}
 }

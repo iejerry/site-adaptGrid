@@ -1,4 +1,4 @@
-/*! site-adaptGrid - v0.0.1 - 2013-07-12
+/*! site-adaptGrid - v0.0.1 - 2013-07-15
 * https://github.com/amazingSurge/site-adaptGrid
 * Copyright (c) 2013 amazingSurge; Licensed  */
 
@@ -349,7 +349,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
 html {
   font-size: 100%;
 }
@@ -1212,6 +1211,15 @@ input:hover {
 input:focus {
   border-color: #7ebdcb;
 }
+input[disabled] {
+  color: #aaa;
+}
+input[disabled]:hover {
+  border-color: #ddd;
+}
+input[disabled]:focus {
+  border-color: #ddd;
+}
 button {
   color: #fff;
   border: none;
@@ -1464,7 +1472,7 @@ header[role="banner"] p {
   text-align: center;
 }
 .download button {
-  width: 25%;
+  width: 248px;
   height: 62px;
   line-height: 62px;
   margin: auto;
@@ -1561,4 +1569,36 @@ footer[role="contentinfo"] {
 }
 .share .github:hover {
   background-image: url("../img/github_hover.png");
+}
+@media only screen and (max-width: 980px) {
+  .container {
+    width: 880px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 690px;
+  }
+  .generator-setting {
+    width: 100%;
+    text-align: center;
+  }
+  .generator-effect {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .producer {
+    width: 100%;
+  }
+  .share {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 300px;
+  }
 }
