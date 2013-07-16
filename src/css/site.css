@@ -237,7 +237,7 @@ header[role="banner"] p {
   display: block;
 }
 .generator-setting {
-  width: 23%;
+  width: 230px;
   overflow: hidden;
 }
 .generator-setting ul {
@@ -268,10 +268,11 @@ header[role="banner"] p {
 .generator-effect {
   position: absolute;
   top: 170px;
-  right: 0;
+  left: 250px;
   width: 76%;
 }
 .generator-submit {
+  display: block;
   margin-top: 30px;
   overflow: hidden;
 }
@@ -403,16 +404,34 @@ footer[role="contentinfo"] {
 }
 @media only screen and (max-width: 980px) {
   .container {
-    width: 880px;
+    width: 90%;
+    max-width: 880px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .container {
-    width: 690px;
+  .generator-dimension {
+    width: 90%;
   }
   .generator-setting {
     width: 100%;
     text-align: center;
+  }
+  .generator-setting ul {
+    float: left;
+    width: 49%;
+    margin: -1px 0 0 -1px;
+    border-left: 1px solid #ddd;
+  }
+  .generator-setting ul:first-child {
+    top: 70px;
+    border-color: transparent;
+  }
+  .generator-setting .switch-on {
+    text-indent: -15px;
+  }
+  .generator-setting .generator-submit {
+    float: left;
+    width: 50%;
   }
   .generator-effect {
     position: relative;
@@ -426,10 +445,15 @@ footer[role="contentinfo"] {
   }
   .share {
     position: relative;
+    top: 15px;
   }
 }
 @media only screen and (max-width: 480px) {
   .container {
-    width: 300px;
+    width: 95%;
+    min-width: 300px;
+  }
+  header[role="banner"] h1 {
+    font-size: 60px;
   }
 }
