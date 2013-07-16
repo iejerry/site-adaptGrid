@@ -4,9 +4,12 @@
 
 // Base
 // --------------------------------------------------
+body > section {
+	padding: 30px 0 30px;
+}
 .container {
 	position: relative;
-	width: 1000px;
+	width: 980px;
 	margin: 0 auto;
 }
 .shaded {
@@ -308,27 +311,27 @@ header[role="banner"] {
 	}
 }
 
-// FAQ
-// --------------------------------------------------
-.faq {
-	background-color: #f8f7f2;
-	padding: 30px 0;
-}
-
 // Example
 // --------------------------------------------------
 .example {
-	padding: 30px 0 80px;
+	margin-bottom: 1em;
 	.row {
-		margin-bottom: 15px;
 		p {
-			line-height: 30px;
+			line-height: 24px;
 			margin-top: 1px;
 			margin-bottom: 1px;
 			text-align: center;
-			background-color: #cfcdc7;
+			background-color: #f0f0f0;
 			.border-radius(2px);
+
+			&:hover {
+				background-color: #d0d0d0;
+				color: #fff;
+			}
 		}
+	}
+	.row > * {
+		margin-bottom: 8px;
 	}
 }
 
@@ -338,7 +341,7 @@ footer[role="contentinfo"] {
 	padding: 40px 0;
 	background-color: #222;
 }
-.producer {
+.author {
 	width: 70%;
 	p {
 		margin: 0;
@@ -402,15 +405,8 @@ footer[role="contentinfo"] {
 		}
 	}
 }
-
 // Media query
 // --------------------------------------------------
-@media only screen and (max-width: 980px) {
-	.container {
-		width: 90%;
-		max-width: 880px;
-	}
-}
 @media only screen and (max-width: 768px) {
 	.generator-dimension {
 		width: 90%;
