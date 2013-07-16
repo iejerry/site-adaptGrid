@@ -1,19 +1,16 @@
-/* Adapt Grid System - v0.2.0 - 2013-04-12
-* https://github.com/amazingSurge/adaptGrid
-* Copyright (c) 2013 amazingSurge; Licensed MIT */
 // Import
 // --------------------------------------------------
 @import "grid-mixins.less";
 
 // Variables
 // --------------------------------------------------
-@gridFontsize:                      14px;
+@grid-fontsize:                      14px;
 
 // Set up
 // --------------------------------------------------
 // .generator(@core, @coreGutterWidth, @coreColumns, @coreWithPrefix, @coreWithSuffix, @equalization, @equalizationColumns, @phrase, @phraseColumns)
 // .generator(@screenName, @breakpoint, @core, @coreGutterWidth, @coreColumns, @coreWithPrefix, @coreWithSuffix, @equalization, @equalizationColumns, @phrase, @phraseColumns)
 
-#grid > .generator (true, 1%, 12, true, true, true, 12, true, sixth);
-#grid > .generator (tablet, 768px, true, 1%, 12, true, true, true, 10, true, sixth);
-#grid > .generator (mobile, 480px, true, 1%, 6, true, true, true, 6, true, fourth);
+#grid > .generator (20px, true, 12, true, true, true, 12, true, sixth);
+#grid > .generator (tablet, 768px, 14px, true,  12, true, true, true, 10, true, sixth);
+#grid > .generator (mobile, 480px, 10px, true, 6, true, true, true, 6, true, fourth);

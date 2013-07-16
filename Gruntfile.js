@@ -72,8 +72,7 @@ module.exports = function(grunt) {
               'build/common/reset.css',
               'build/common/typography.css',
               'build/common/forms-core.css',
-              'build/components/buttons-core.css',
-              'build/function/grid.css'
+              'build/components/buttons-core.css'
           ],
           dest: 'src/css/'
         },
@@ -84,6 +83,15 @@ module.exports = function(grunt) {
           src: [
               'mixins.less',
               'mixins/*.less',
+          ],
+          dest: 'src/less/'
+        },
+         {
+          expand: true,
+          flatten: true,
+          cwd: 'components/prelude/less/',
+          src: [
+              'functions/grid/grid-mixins.less',
           ],
           dest: 'src/less/'
         }]
@@ -106,7 +114,8 @@ module.exports = function(grunt) {
     less: {
       site: {
         files: {
-          "src/css/site.css": "src/less/site.less"
+          "src/css/site.css": "src/less/site.less",
+          "src/css/grid.css": "src/less/grid.less"
         }
       },
     },

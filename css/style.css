@@ -59,6 +59,8 @@ html {
   /* 1 */
 
   -ms-text-size-adjust: 100%;
+  /* 2 */
+
   -webkit-text-size-adjust: 100%;
   /* 2 */
 
@@ -349,6 +351,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 html {
   font-size: 100%;
 }
@@ -671,9 +674,20 @@ label {
 
   font-size: 0;
 }
-.row .column,
-.row [class*="span-"],
-.row [class*="column-"] {
+.row.no-spacing {
+  margin-left: 0;
+}
+.row.no-spacing .column,
+.row.no-spacing [class*="span-"],
+.row.no-spacing [class*="column-"] {
+  padding-left: 0;
+}
+.row.center {
+  text-align: center;
+}
+.column,
+[class*="span-"],
+[class*="column-"] {
   display: inline-block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -694,24 +708,13 @@ label {
   *zoom: 1;
   /* For IE6/IE7 */
 }
-.row.center {
-  text-align: center;
-}
 .row {
-  margin-left: -1%;
+  margin-left: -20px;
 }
 .column,
 [class*="span-"],
 [class*="column-"] {
-  padding-left: 1%;
-}
-.no-spacing {
-  margin-left: 0;
-}
-.no-spacing .column,
-.no-spacing [class*="span-"],
-.no-spacing [class*="column-"] {
-  padding-left: 0;
+  padding-left: 20px;
 }
 .span-1 {
   width: 8.333333333333334%;
@@ -892,12 +895,12 @@ label {
 }
 @media only screen and (max-width: 768px) {
   .row {
-    margin-left: -1%;
+    margin-left: -14px;
   }
   .column,
   [class*="span-"],
   [class*="column-"] {
-    padding-left: 1%;
+    padding-left: 14px;
   }
   .tablet-span-1 {
     width: 8.333333333333334%;
@@ -1073,12 +1076,12 @@ label {
 }
 @media only screen and (max-width: 480px) {
   .row {
-    margin-left: -1%;
+    margin-left: -10px;
   }
   .column,
   [class*="span-"],
   [class*="column-"] {
-    padding-left: 1%;
+    padding-left: 10px;
   }
   .mobile-span-1 {
     width: 16.666666666666668%;
