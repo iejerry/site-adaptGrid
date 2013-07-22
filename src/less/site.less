@@ -2,6 +2,14 @@
 // --------------------------------------------------
 @import "mixins.less";
 
+//var
+// --------------------------------------------------
+@spans: 12;
+@spanWidth: 60;
+@gutterWidth: 20;
+@gridsystemWidth: (@spanWidth*@spans) + (@gutterWidth*@spans) * 1px;
+@totalWidth: 100%;
+
 // Base
 // --------------------------------------------------
 body > section {
@@ -9,7 +17,8 @@ body > section {
 }
 .container {
 	position: relative;
-	width: 980px;
+	max-width: 980px;
+	width: 90%;
 	margin: 0 auto;
 }
 .shaded {
@@ -29,13 +38,7 @@ h2 {
 h3 {
 	color: #444;
 }
-code {
-	padding: 2px 6px;
-	color: #ff6853;
-	background-color: #feeeec;
-	background-color: rgba(245,89,70,0.1);
-	border: none;
-}
+
 // Form
 // --------------------------------------------------
 input {
@@ -149,11 +152,11 @@ button {
 // --------------------------------------------------
 header[role="banner"] {
 	padding: 65px 0;
+	text-align: center;
 	background: url("../img/back.png") repeat-x 0 0;
 	h1 {
 		color: #000;
 		font-size: 90px;
-		text-align: center;
 	}
 	b {
 		color: #f55946;
@@ -162,13 +165,13 @@ header[role="banner"] {
 	p {
 		color: #555;
 		font-size: 24px;
-		text-align: center;
 	}
 }
 
 // Generator
 // --------------------------------------------------
 .generator {
+	display: none;
 	padding: 60px 0;
 }
 .generator-dimension {
@@ -340,13 +343,14 @@ header[role="banner"] {
 footer[role="contentinfo"] {
 	padding: 40px 0;
 	background-color: #222;
+	overflow: hidden;
 }
 .author {
-	width: 70%;
+	#semantic > .span(7);
+	#semantic > .pull(5);
 	p {
 		margin: 0;
 		color: #fff;
-		
 		font-size: 20px;
 		
 	}
@@ -356,9 +360,7 @@ footer[role="contentinfo"] {
 	a {
 		color: #7a7a7a;
 		color: rgba(255,255,255,0.3);
-		
 		font-size: 13px;
-		
 		text-decoration: none;
 	}
 }
@@ -408,38 +410,7 @@ footer[role="contentinfo"] {
 // Media query
 // --------------------------------------------------
 @media only screen and (max-width: 768px) {
-	.generator-dimension {
-		width: 90%;
-	}
-	.generator-setting {
-		width: 100%;
-		text-align: center;
-		ul {
-			float: left;
-			width: 49%;
-			margin: -1px 0 0 -1px;
-			border-left: 1px solid #ddd;
-			&:first-child {
-				top: 70px;
-				border-color: transparent;
-			}
-		}
-		.switch-on {
-			text-indent: -15px;
-		}
-		.generator-submit {
-			float: left;
-			width: 50%;
-		}
-	}
-	.generator-effect {
-		position: relative;
-		top: 0;
-		left: 0;
-		margin-top: 30px;
-		width: 100%;
-	}
-	.producer {
+	.author {
 		width: 100%;
 	}
 	.share {

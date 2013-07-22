@@ -1,7 +1,14 @@
+body > section {
+  padding: 30px 0 30px;
+}
 .container {
   position: relative;
-  width: 1000px;
+  max-width: 980px;
+  width: 90%;
   margin: 0 auto;
+}
+.shaded {
+  background: #FaFaFa;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -20,13 +27,6 @@ h2 {
 }
 h3 {
   color: #444;
-}
-code {
-  padding: 2px 6px;
-  color: #ff6853;
-  background-color: #feeeec;
-  background-color: rgba(245, 89, 70, 0.1);
-  border: none;
 }
 input {
   color: #666;
@@ -155,12 +155,12 @@ button {
 }
 header[role="banner"] {
   padding: 65px 0;
+  text-align: center;
   background: url("../img/back.png") repeat-x 0 0;
 }
 header[role="banner"] h1 {
   color: #000;
   font-size: 90px;
-  text-align: center;
 }
 header[role="banner"] b {
   color: #f55946;
@@ -169,9 +169,9 @@ header[role="banner"] b {
 header[role="banner"] p {
   color: #555;
   font-size: 24px;
-  text-align: center;
 }
 .generator {
+  display: none;
   padding: 60px 0;
 }
 .generator-dimension {
@@ -318,42 +318,47 @@ header[role="banner"] p {
 .download button:active {
   background-color: #eb644f;
 }
-.faq {
-  background-color: #f8f7f2;
-  padding: 30px 0;
+.example {
+  margin-bottom: 1em;
 }
-.document {
-  padding: 30px 0 80px;
-}
-.document .row {
-  margin-bottom: 15px;
-}
-.document .row p {
-  line-height: 40px;
+.example .row p {
+  line-height: 24px;
   margin-top: 1px;
   margin-bottom: 1px;
   text-align: center;
-  background-color: #cfcdc7;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  background-color: #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.example .row p:hover {
+  background-color: #d0d0d0;
+  color: #fff;
+}
+.example .row > * {
+  margin-bottom: 8px;
 }
 footer[role="contentinfo"] {
   padding: 40px 0;
   background-color: #222;
+  overflow: hidden;
 }
-.producer {
-  width: 70%;
+.author {
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416666666666665%;
+  margin-right: 42.708333333333336%;
 }
-.producer p {
+.author p {
   margin: 0;
   color: #fff;
   font-size: 20px;
 }
-.producer span {
+.author span {
   color: #7ebdcb;
 }
-.producer a {
+.author a {
   color: #7a7a7a;
   color: rgba(255, 255, 255, 0.3);
   font-size: 13px;
@@ -402,45 +407,8 @@ footer[role="contentinfo"] {
 .share .github:hover {
   background-image: url("../img/github_hover.png");
 }
-@media only screen and (max-width: 980px) {
-  .container {
-    width: 90%;
-    max-width: 880px;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .generator-dimension {
-    width: 90%;
-  }
-  .generator-setting {
-    width: 100%;
-    text-align: center;
-  }
-  .generator-setting ul {
-    float: left;
-    width: 49%;
-    margin: -1px 0 0 -1px;
-    border-left: 1px solid #ddd;
-  }
-  .generator-setting ul:first-child {
-    top: 70px;
-    border-color: transparent;
-  }
-  .generator-setting .switch-on {
-    text-indent: -15px;
-  }
-  .generator-setting .generator-submit {
-    float: left;
-    width: 50%;
-  }
-  .generator-effect {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 30px;
-    width: 100%;
-  }
-  .producer {
+  .author {
     width: 100%;
   }
   .share {

@@ -1,4 +1,4 @@
-/*! site-adaptGrid - v0.0.1 - 2013-07-16
+/*! site-adaptGrid - v0.0.1 - 2013-07-22
 * https://github.com/amazingSurge/site-adaptGrid
 * Copyright (c) 2013 amazingSurge; Licensed  */
 
@@ -1170,10 +1170,17 @@ label {
   }
 }
 
+body > section {
+  padding: 30px 0 30px;
+}
 .container {
   position: relative;
-  width: 1000px;
+  max-width: 980px;
+  width: 90%;
   margin: 0 auto;
+}
+.shaded {
+  background: #FaFaFa;
 }
 body {
   font-family: 'Raleway', sans-serif;
@@ -1192,13 +1199,6 @@ h2 {
 }
 h3 {
   color: #444;
-}
-code {
-  padding: 2px 6px;
-  color: #ff6853;
-  background-color: #feeeec;
-  background-color: rgba(245, 89, 70, 0.1);
-  border: none;
 }
 input {
   color: #666;
@@ -1327,12 +1327,12 @@ button {
 }
 header[role="banner"] {
   padding: 65px 0;
+  text-align: center;
   background: url("../img/back.png") repeat-x 0 0;
 }
 header[role="banner"] h1 {
   color: #000;
   font-size: 90px;
-  text-align: center;
 }
 header[role="banner"] b {
   color: #f55946;
@@ -1341,9 +1341,9 @@ header[role="banner"] b {
 header[role="banner"] p {
   color: #555;
   font-size: 24px;
-  text-align: center;
 }
 .generator {
+  display: none;
   padding: 60px 0;
 }
 .generator-dimension {
@@ -1490,42 +1490,47 @@ header[role="banner"] p {
 .download button:active {
   background-color: #eb644f;
 }
-.faq {
-  background-color: #f8f7f2;
-  padding: 30px 0;
+.example {
+  margin-bottom: 1em;
 }
-.document {
-  padding: 30px 0 80px;
-}
-.document .row {
-  margin-bottom: 15px;
-}
-.document .row p {
-  line-height: 40px;
+.example .row p {
+  line-height: 24px;
   margin-top: 1px;
   margin-bottom: 1px;
   text-align: center;
-  background-color: #cfcdc7;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+  background-color: #f0f0f0;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+}
+.example .row p:hover {
+  background-color: #d0d0d0;
+  color: #fff;
+}
+.example .row > * {
+  margin-bottom: 8px;
 }
 footer[role="contentinfo"] {
   padding: 40px 0;
   background-color: #222;
+  overflow: hidden;
 }
-.producer {
-  width: 70%;
+.author {
+  display: inline;
+  float: left;
+  width: 56.25%;
+  margin: 0 1.0416666666666665%;
+  margin-right: 42.708333333333336%;
 }
-.producer p {
+.author p {
   margin: 0;
   color: #fff;
   font-size: 20px;
 }
-.producer span {
+.author span {
   color: #7ebdcb;
 }
-.producer a {
+.author a {
   color: #7a7a7a;
   color: rgba(255, 255, 255, 0.3);
   font-size: 13px;
@@ -1574,45 +1579,8 @@ footer[role="contentinfo"] {
 .share .github:hover {
   background-image: url("../img/github_hover.png");
 }
-@media only screen and (max-width: 980px) {
-  .container {
-    width: 90%;
-    max-width: 880px;
-  }
-}
 @media only screen and (max-width: 768px) {
-  .generator-dimension {
-    width: 90%;
-  }
-  .generator-setting {
-    width: 100%;
-    text-align: center;
-  }
-  .generator-setting ul {
-    float: left;
-    width: 49%;
-    margin: -1px 0 0 -1px;
-    border-left: 1px solid #ddd;
-  }
-  .generator-setting ul:first-child {
-    top: 70px;
-    border-color: transparent;
-  }
-  .generator-setting .switch-on {
-    text-indent: -15px;
-  }
-  .generator-setting .generator-submit {
-    float: left;
-    width: 50%;
-  }
-  .generator-effect {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin-top: 30px;
-    width: 100%;
-  }
-  .producer {
+  .author {
     width: 100%;
   }
   .share {
@@ -1628,4 +1596,87 @@ footer[role="contentinfo"] {
   header[role="banner"] h1 {
     font-size: 60px;
   }
+}
+
+pre {
+    border: 1px solid #ccc;
+    word-wrap: break-word;
+    padding: 6px 10px;
+    line-height: 19px;
+    margin-bottom: 20px;
+}
+
+code {
+    border: 1px solid #eaeaea;
+    margin: 0px 2px;
+    padding: 0px 5px;
+    font-size: 12px;
+}
+
+pre code {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+pre, code {
+    font-family: Consolas, 'Liberation Mono', Courier, monospace;
+    color: #333;
+    background: #f8f8f8;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+
+pre, pre code {
+    font-size: 13px;
+}
+
+pre .comment {
+    color: #998;
+}
+
+pre .support {
+    color: #0086B3;
+}
+
+pre .tag, pre .tag-name {
+    color: navy;
+}
+
+pre .keyword, pre .css-property, pre .vendor-prefix, pre .sass, pre .class, pre .id, pre .css-value, pre .entity.function, pre .storage.function {
+    font-weight: bold;
+}
+
+pre .css-property, pre .css-value, pre .vendor-prefix, pre .support.namespace {
+    color: #333;
+}
+
+pre .constant.numeric, pre .keyword.unit, pre .hex-color {
+    font-weight: normal;
+    color: #099;
+}
+
+pre .entity.class {
+    color: #458;
+}
+
+pre .entity.id, pre .entity.function {
+    color: #900;
+}
+
+pre .attribute, pre .variable {
+    color: teal;
+}
+
+pre .string, pre .support.value  {
+    font-weight: normal;
+    color: #d14;
+}
+
+pre .regexp {
+    color: #009926;
 }

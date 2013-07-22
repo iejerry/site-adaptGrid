@@ -5,7 +5,7 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -15,8 +15,11 @@
     <header role="banner">
         <div class="container">
             <h1><b>a</b>daptGrid</h1>
-            <p>&nbsp;&nbsp;AdaptGrid is a fluid grid framework designed with ease of use and simplicity in mind.Built using LESS and CSS3 media queries, with 'Mobile First'mind'.You can create variant responsive grids on the fly with a simple tools.</p>
+            <p>&nbsp;&nbsp;AdaptGrid is a fluid grid framework designed with ease of use and simplicity in mind.Built using LESS and CSS3 media queries,  with 'Mobile First'mind'.You can create variant responsive grids on the fly with a simple tools.</p>
+            <iframe src="github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="152px" height="30px"></iframe>
+            <iframe src="github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true&size=large" allowtransparency="true" frameborder="0" scrolling="0" width="146px" height="30px"></iframe>
         </div>
+        <a href="https://github.com/"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
     </header>
     <section class="generator container">
         <form>
@@ -143,26 +146,26 @@
             <button>download</button>
         </form>
     </section>
-    <section class="faq">
+    <section class="shaded">
         <div class="container">
             <h2>Why Use it?</h2>
-            <div class="row has-3 tablet-has-2 mobile-has-1">
+            <div class="row has-3 mobile-has-1">
                 <article class="column">
                     <h3>Css3/html5</h3>
                     <p>Built-on CSS3 and HTML5 semantics to allow you to start captializing on a next generation standard.</p>
                 </article>
                 <article class="column">
                     <h3>Customizable</h3>
-                    <p>Through the simple tools,you can have whatever you want,wherever you need it.</p>
+                    <p>Through the simple tools, you can have whatever you want, wherever you need it.</p>
                 </article>
                 <article class="column">
-                    <h3>Adaptation</h3>
-                    <p>Because it uses percentages,your fluid columns will fit into any width.</p>
+                    <h3>Semantic</h3>
+                    <p>Everything is now semantic. Now you can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
                 </article>
             </div>
-            <div class="row has-3 tablet-has-2 mobile-has-1">
+            <div class="row has-3 mobile-has-1">
                 <article class="column">
-                    <h3>Mobile First</h3>
+                    <h3>Mobile Fisrt</h3>
                     <p>Built-on CSS3 and HTML5 semantics to allow you to start captializing on a next generation standard.</p>
                 </article>
                 <article class="column">
@@ -170,150 +173,311 @@
                     <p>You can define distinct ranges of screen size by a simple tools.So people visiting your site will receive a layout that's tuned to the size of their browser window.</p>
                 </article>
                 <article class="column">
-                    <h3>Cross Browser</h3>
-                    <p>It works well in Chrome,Safari,Firefox,IE9+.* It works without problems even on IE8.But IE7 and IE8 don't support CSS3 Media Queries(IE7 don't support box-sizing too),so it's necessary to use JavaScript to push them to work with it.</p>
+                    <h3>Less</h3>
+                    <p>You don't have to know a ton about Less to take this class. The first hour covers an introduction, with the second hour focused on implementing it. You'll be writing Less in no time.</p>
                 </article>
             </div>
         </div>
     </section>
-    <section class="document container">
-        <h2>Example</h2>
-        <p>Default: use <code>span-</code> to control width.</p>
-        <div class="row">
-            <div class="span-1"><p>1</p></div>
-            <div class="span-11"><p>11</p></div>
+    <section>
+        <div class="container">
+            <h2>Basic Grid</h2>
+            <p>Default: use <code>span-</code> to control width.</p>
+            <div class="example">
+                <div class="row">
+                    <div class="span-1"><p>1</p></div>
+                    <div class="span-11"><p>11</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-2"><p>2</p></div>
+                    <div class="span-10"><p>10</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-3"><p>3</p></div>
+                    <div class="span-9"><p>9</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-4"><p>4</p></div>
+                    <div class="span-8"><p>8</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-5"><p>5</p></div>
+                    <div class="span-7"><p>7</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-6"><p>6</p></div>
+                    <div class="span-6"><p>6</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-7"><p>7</p></div>
+                    <div class="span-5"><p>5</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-8"><p>8</p></div>
+                    <div class="span-4"><p>4</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-9"><p>9</p></div>
+                    <div class="span-3"><p>3</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-10"><p>10</p></div>
+                    <div class="span-2"><p>2</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-11"><p>11</p></div>
+                    <div class="span-1"><p>1</p></div>
+                </div>
+            </div>
+            <p>For a simple two column layout, create a <code>row</code> and add the appropriate number of <code>span-</code> columns. As this is a 12-column grid, each <code>span-</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).
+            <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-1&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-11&quot;&gt;&lt;p&gt;11&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-2&quot;&gt;&lt;p&gt;2&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-10&quot;&gt;&lt;p&gt;10&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&quot;&gt;&lt;p&gt;3&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-9&quot;&gt;&lt;p&gt;9&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            <h3>Offsetting columns</h3>
+            <p>Use <code>prefix-</code> and <code>suffix-</code> to make offset, and use <code>no-spacing</code> to eliminate the gutter:</p>
+            <div class="example">
+                <div class="row no-spacing">
+                    <div class="span-6 prefix-6 tablet-span-8 tablet-prefix-4 mobile-span-5 mobile-suffix-1"><p>pre-6 6</p></div>
+                </div>
+                <div class="row no-spacing">
+                    <div class="span-6 suffix-6 tablet-span-8 tablet-suffix-4 mobile-span-5 mobile-prefix-1"><p>6 suf-6</p></div>
+                </div>              
+                <div class="row no-spacing">
+                    <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
+                    <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
+                    <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-8 prefix-2 suffix-2"><p>pre-2 8 suf-2</p></div>
+                </div>
+                <p>Offsets allow you to create additional space between columns in a row. Like the rest of the grid, they're nestable. You can use classes like <code>prefix-4</code> and <code>suffix-8</code> to manipulate your column positions in different ways. You can offset up to 11 since you wouldn't ever offset a full-width column.</p>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-6&nbsp;prefix-6&nbsp;tablet-span-8&nbsp;tablet-prefix-4&nbsp;mobile-span-5&nbsp;mobile-suffix-1&quot;&gt;&lt;p&gt;pre-6&nbsp;6&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-6&nbsp;suffix-6&nbsp;tablet-span-8&nbsp;tablet-suffix-4&nbsp;mobile-span-5&nbsp;mobile-prefix-1&quot;&gt;&lt;p&gt;6&nbsp;suf-6&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;&nbsp;
+&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-2&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;pre-1&nbsp;2&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-2&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;pre-1&nbsp;2&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-2&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;pre-1&nbsp;2&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&nbsp;prefix-2&nbsp;suffix-2&quot;&gt;&lt;p&gt;pre-2&nbsp;8&nbsp;suf-2&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+            <h3>Centered columns</h3>
+            <p>Centered columns are placed in the middle of the row.This is accomplished by adding a class of <code>center</code> depending on which breakpoint you want the row to center on. </p>
+            <div class="example">
+                <div class="row center">
+                    <div class="span-7"><p>7 center</p></div>
+                </div>
+                <div class="row center">
+                    <div class="span-9"><p>9 center</p></div>
+                </div>
+                <div class="row center">s
+                    <div class="span-11"><p>11 center</p></div>
+                </div>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&nbsp;center&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-7&quot;&gt;&lt;p&gt;7&nbsp;center&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;center&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-9&quot;&gt;&lt;p&gt;9&nbsp;center&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;center&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-11&quot;&gt;&lt;p&gt;11&nbsp;center&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+            <p>Resize the browser to see the example layouts change.There is currently two breakpoint.</p>
+            <p>With tablet classes: <code>.tablet-full</code>, <code>.tablet-half</code>, <code>.tablet-two-thirds</code>, <code>.tablet-third</code>.</p>
+            <p>With mobile classes: <code>.mobile-half</code>, <code>.mobile-two-thirds</code>, <code>.mobile-third</code>.</p>
+            <div class="example">
+                <div class="row">
+                    <div class="span-6 tablet-span-12"><p>6 tablet-span-12</p></div>
+                    <div class="span-3 tablet-span-6"><p>3 tablet-span-6</p></div>
+                    <div class="span-3 tablet-span-6"><p>3 tablet-span-6</p></div>
+                </div>
+                <div class="row">
+                    <div class="span-5 tablet-span-12"><p>5 tablet-span-12</p></div>
+                    <div class="span-4 tablet-span-8 mobile-span-3"><p>4 tablet-span-8 mobile-span-6</p></div>
+                    <div class="span-3 tablet-span-4 mobile-span-3"><p>3 tablet-span-4 mobile-span-6</p></div>
+                </div>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-6&nbsp;tablet-span-12&quot;&gt;&lt;p&gt;6&nbsp;tablet-span-12&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-6&quot;&gt;&lt;p&gt;3&nbsp;tablet-span-6&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-6&quot;&gt;&lt;p&gt;3&nbsp;tablet-span-6&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-5&nbsp;tablet-span-12&quot;&gt;&lt;p&gt;5&nbsp;tablet-span-12&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-8&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;4&nbsp;tablet-span-8&nbsp;mobile-span-6&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-4&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;3&nbsp;tablet-span-4&nbsp;mobile-span-6&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
         </div>
-        <div class="row">
-            <div class="span-2"><p>2</p></div>
-            <div class="span-10"><p>10</p></div>
+    </section>
+    <section class="shaded">
+        <div class="container">
+            <h2>Tiles Grid</h2>
+            <p>Equalization: If the column's width is equal, use <code>has-</code> and <code>column</code> to control the number of columns.</p>
+            <div class="example">
+                <div class="row has-2">
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                </div>
+                <div class="row has-12">
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                </div>                
+                <ul class="row has-4">
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                    <li class="column"><p>eq</p></li>
+                </ul>
+                <p>Tiles are an awesome new way to lay out elements on a page that you want to maintain their “grid" style layout. This allows you to preserve the look and feel of things like a grid of profile images in a friends list, or other block-style content generated by your application across devices. Tiles are invoked using the <code>has-</code> class in association with a <code>columns</code> class to determine the layout. </p>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&nbsp;has-2&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;has-12&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;ul&nbsp;class=&quot;row&nbsp;has-4&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                </code></pre>
+            </div>
+            <p>Also, there is two breakpoint:</p>
+            <p>With tablet classes: <code>.tablet-has-</code>.</p>
+            <p>With mobile classes: <code>.mobile-has-</code>.</p>
+            <div class="example">
+                <div class="row has-8 tablet-has-4 mobile-has-2">
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                    <div class="column"><p>eq</p></div>
+                </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="span-3"><p>3</p></div>
-            <div class="span-9"><p>9</p></div>
+    </section>
+    <section class="example">
+        <div class="container">
+            <h2>Phrase Grid</h2>
+            <p>Different window size according to different effects.When the screen size change present different display modes</p>
+            <div class="example">
+                <div class="row">
+                    <div class="column sixth tablet-third mobile-half"><p>eq</p></div>
+                    <div class="column sixth tablet-two-third mobile-half"><p>eq</p></div>
+                    <div class="column sixth tablet-three-fourth mobile-full"><p>eq</p></div>
+                    <div class="column sixth tablet-fourth mobile-full"><p>eq</p></div>
+                    <div class="column sixth tablet-half mobile-half"><p>eq</p></div>
+                    <div class="column sixth tablet-half mobile-half"><p>eq</p></div>
+                </div>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-third&nbsp;mobile-half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-two-third&nbsp;mobile-half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-three-fourth&nbsp;mobile-full&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-fourth&nbsp;mobile-full&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-half&nbsp;mobile-half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;sixth&nbsp;tablet-half&nbsp;mobile-half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
+            <p>All In One:</p>
+            <div class="example">
+                <div class="row">
+                    <div class="column full"><p>eq</p></div>
+                    <div class="column half"><p>eq</p></div>
+                    <div class="column half"><p>eq</p></div>
+                    <div class="column two-third"><p>eq</p></div>
+                    <div class="column third"><p>eq</p></div>
+                    <div class="column three-fourth"><p>eq</p></div>
+                </div>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;full&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;half&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;two-third&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;third&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;three-fourth&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+            </div>
         </div>
-        <div class="row">
-            <div class="span-4"><p>4</p></div>
-            <div class="span-8"><p>8</p></div>
-        </div>
-        <div class="row">
-            <div class="span-5"><p>5</p></div>
-            <div class="span-7"><p>7</p></div>
-        </div>
-        <div class="row">
-            <div class="span-6"><p>6</p></div>
-            <div class="span-6"><p>6</p></div>
-        </div>
-        <div class="row">
-            <div class="span-7"><p>7</p></div>
-            <div class="span-5"><p>5</p></div>
-        </div>
-        <div class="row">
-            <div class="span-8"><p>8</p></div>
-            <div class="span-4"><p>4</p></div>
-        </div>
-        <div class="row">
-            <div class="span-9"><p>9</p></div>
-            <div class="span-3"><p>3</p></div>
-        </div>
-        <div class="row">
-            <div class="span-10"><p>10</p></div>
-            <div class="span-2"><p>2</p></div>
-        </div>
-        <div class="row">
-            <div class="span-11"><p>11</p></div>
-            <div class="span-1"><p>1</p></div>
-        </div>
-        <p>Use <code>prefix-</code> and <code>suffix-</code> to make offset,and use <code>no-spacing</code> to eliminate the gutter:</p>
-        <div class="row no-spacing">
-            <div class="span-6 prefix-6 tablet-span-8 tablet-prefix-4 mobile-span-5 mobile-suffix-1"><p>pre-6 6</p></div>
-        </div>
-        <div class="row no-spacing">
-            <div class="span-6 suffix-6 tablet-span-8 tablet-suffix-4 mobile-span-5 mobile-prefix-1"><p>6 suf-6</p></div>
-        </div>              
-        <div class="row no-spacing">
-            <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
-            <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
-            <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
-        </div>
-        <div class="row">
-            <div class="span-8 prefix-2 suffix-2"><p>pre-2 8 suf-2</p></div>
-        </div>
-        <div class="row center">
-            <div class="span-7"><p>7 center</p></div>
-        </div>
-        <div class="row center">
-            <div class="span-9"><p>9 center</p></div>
-        </div>
-        <div class="row center">s
-            <div class="span-11"><p>11 center</p></div>
-        </div>
-        <p>Resize the browser to see the example layouts chang.There is currently two breakpoint.</p>
-       <p>With tablet classes: <code>.tablet-full</code>,<code>.tablet-half</code>,<code>.tablet-two-thirds</code>,<code>.tablet-third</code>.</p>
-       <p>With mobile classes: <code>.mobile-half</code>,<code>.mobile-two-thirds</code>,<code>.mobile-third</code>.</p>
-        <div class="row">
-            <div class="span-6 tablet-span-12"><p>6 tablet-span-12</p></div>
-            <div class="span-3 tablet-span-6"><p>3 tablet-span-6</p></div>
-            <div class="span-3 tablet-span-6"><p>3 tablet-span-6</p></div>
-        </div>
-        <div class="row">
-            <div class="span-5 tablet-span-12"><p>5 tablet-span-12</p></div>
-            <div class="span-4 tablet-span-8 mobile-span-3"><p>4 tablet-span-8 mobile-span-6</p></div>
-            <div class="span-3 tablet-span-4 mobile-span-3"><p>3 tablet-span-4 mobile-span-6</p></div>
-        </div>
-        <p>Equalization: If the column's width is equal,use <code>has-</code> and <code>column</code> to control the number of columns.</p>
-        <div class="row has-2">
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-        </div>
-        <div class="row has-12">
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-        </div>
-        <p>Also,there is two breakpoint:</p>
-        <p>With tablet classes: <code>.tablet-has-</code>.</p>
-        <p>With mobile classes: <code>.mobile-has-</code>.</p>
-        <div class="row has-8 tablet-has-4 mobile-has-2">
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-            <div class="column"><p>eq</p></div>
-        </div>
-        <p>SimplifyGrid:</p>
-        <div class="row">
-            <div class="column sixth tablet-third mobile-half"><p>eq</p></div>
-            <div class="column sixth tablet-two-third mobile-half"><p>eq</p></div>
-            <div class="column sixth tablet-three-fourth mobile-full"><p>eq</p></div>
-            <div class="column sixth tablet-fourth mobile-full"><p>eq</p></div>
-            <div class="column sixth tablet-half mobile-half"><p>eq</p></div>
-            <div class="column sixth tablet-half mobile-half"><p>eq</p></div>
-        </div>
-        <p>AllInOne:</p>
-        <div class="row">
-            <div class="column full"><p>eq</p></div>
-            <div class="column half"><p>eq</p></div>
-            <div class="column half"><p>eq</p></div>
-            <div class="column two-third"><p>eq</p></div>
-            <div class="column third"><p>eq</p></div>
-            <div class="column three-fourth"><p>eq</p></div>
+    </section>
+    <section class="shaded">
+        <div class="container">
+            <h3>Cross Browser</h3>
+            <p>It works well in Chrome, Safari, Firefox, IE9+.* It works without problems even on IE8.But IE7 and IE8 don't support CSS3 Media Queries(IE7 don't support box-sizing too), so it's necessary to use JavaScript to push them to work with it.</p>
         </div>
     </section>
     <footer role="contentinfo">
         <div class="container">
-            <div class="producer">
+            <div class="author">
                 <p>Developed with love by your friends at <span>AmazingSurge</span></p>
                 <a href="">www.amazingSurge.com</a>
             </div>
@@ -326,16 +490,20 @@
         </div>
     </footer>
 
+    <script type="text/javascript" src="js/rainbow.min.js"></script>
+    <script type="text/javascript" src="js/language/html.js"></script>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+    var _gaq=[['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+    (function(d, t){var g=d.createElement(t), s=d.getElementsByTagName(t)[0];
     g.src='//www.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
+    s.parentNode.insertBefore(g, s)}(document, 'script'));
 </script>
+
 </body>
 </html>

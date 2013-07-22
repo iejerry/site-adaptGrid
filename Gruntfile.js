@@ -114,8 +114,8 @@ module.exports = function(grunt) {
     less: {
       site: {
         files: {
-          "src/css/site.css": "src/less/site.less",
-          "src/css/grid.css": "src/less/grid.less"
+          "src/css/grid.css": "src/less/grid.less",
+          "src/css/site.css": "src/less/site.less"
         }
       },
     },
@@ -134,7 +134,8 @@ module.exports = function(grunt) {
           'src/css/forms-core.css',
           'src/css/buttons-core.css',
           'src/css/grid.css',
-          'src/css/site.css'
+          'src/css/site.css',
+          'src/css/themes/github.css'
         ],
         dest: 'css/style.css'
       }
