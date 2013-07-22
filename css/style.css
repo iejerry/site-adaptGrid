@@ -1329,6 +1329,9 @@ header[role="banner"] {
   padding: 65px 0;
   text-align: center;
   background: url("../img/back.png") repeat-x 0 0;
+  display: block;
+  width: 102.08333333333333%;
+  margin: 0 -1.0416666666666665%;
 }
 header[role="banner"] h1 {
   color: #000;

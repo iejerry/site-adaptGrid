@@ -81,12 +81,14 @@ module.exports = function(grunt) {
           flatten: false,
           cwd: 'components/prelude/less/',
           src: [
+              'init.less',
+              'variables.less',
               'mixins.less',
               'mixins/*.less',
           ],
           dest: 'src/less/'
         },
-         {
+        {
           expand: true,
           flatten: true,
           cwd: 'components/prelude/less/',
