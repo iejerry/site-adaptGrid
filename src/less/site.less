@@ -2,14 +2,6 @@
 // --------------------------------------------------
 @import "init.less";
 
-//var
-// --------------------------------------------------
-@spans: 12;
-@spanWidth: 60;
-@gutterWidth: 20;
-@gridsystemWidth: (@spanWidth*@spans) + (@gutterWidth*@spans) * 1px;
-@totalWidth: 100%;
-
 // Base
 // --------------------------------------------------
 body > section {
@@ -18,7 +10,6 @@ body > section {
 .container {
 	position: relative;
 	max-width: 980px;
-	width: 90%;
 	margin: 0 auto;
 }
 .shaded {
@@ -317,7 +308,6 @@ header[role="banner"] {
 // Example
 // --------------------------------------------------
 .example {
-	margin-bottom: 1em;
 	.row {
 		p {
 			line-height: 24px;
@@ -410,8 +400,11 @@ footer[role="contentinfo"] {
 // Media query
 // --------------------------------------------------
 @media only screen and (max-width: 768px) {
+	.container {
+		width: 95%;
+	}
 	.author {
-		width: 100%;
+		width: 99%;
 	}
 	.share {
 		position: relative;
@@ -421,7 +414,6 @@ footer[role="contentinfo"] {
 
 @media only screen and (max-width: 480px) {
 	.container {
-		width: 95%;
 		min-width: 300px;
 	}
 	header[role="banner"] {

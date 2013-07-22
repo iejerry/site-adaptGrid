@@ -1176,7 +1176,6 @@ body > section {
 .container {
   position: relative;
   max-width: 980px;
-  width: 90%;
   margin: 0 auto;
 }
 .shaded {
@@ -1329,9 +1328,6 @@ header[role="banner"] {
   padding: 65px 0;
   text-align: center;
   background: url("../img/back.png") repeat-x 0 0;
-  display: block;
-  width: 102.08333333333333%;
-  margin: 0 -1.0416666666666665%;
 }
 header[role="banner"] h1 {
   color: #000;
@@ -1493,9 +1489,6 @@ header[role="banner"] p {
 .download button:active {
   background-color: #eb644f;
 }
-.example {
-  margin-bottom: 1em;
-}
 .example .row p {
   line-height: 24px;
   margin-top: 1px;
@@ -1583,8 +1576,11 @@ footer[role="contentinfo"] {
   background-image: url("../img/github_hover.png");
 }
 @media only screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
   .author {
-    width: 100%;
+    width: 99%;
   }
   .share {
     position: relative;
@@ -1593,7 +1589,6 @@ footer[role="contentinfo"] {
 }
 @media only screen and (max-width: 480px) {
   .container {
-    width: 95%;
     min-width: 300px;
   }
   header[role="banner"] h1 {
