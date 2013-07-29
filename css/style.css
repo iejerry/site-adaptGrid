@@ -1,4 +1,4 @@
-/*! site-adaptGrid - v0.0.1 - 2013-07-23
+/*! site-adaptGrid - v0.0.1 - 2013-07-29
 * https://github.com/amazingSurge/site-adaptGrid
 * Copyright (c) 2013 amazingSurge; Licensed  */
 
@@ -1199,131 +1199,113 @@ h2 {
 h3 {
   color: #444;
 }
-input {
-  color: #666;
-  text-indent: 10px;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-input:hover {
-  border-color: #bbb;
-}
-input:focus {
-  border-color: #7ebdcb;
+/*input {
+	color: #666;
+	text-indent: 10px;
+	border: 1px solid #ddd;
+	.border-radius(3px);
+	&:hover {
+		border-color: #bbb;
+	}
+	&:focus {
+		border-color: #7ebdcb;
+	}
 }
 input[disabled] {
-  color: #aaa;
-}
-input[disabled]:hover {
-  border-color: #ddd;
-}
-input[disabled]:focus {
-  border-color: #ddd;
+	color: #aaa;
+	&:hover {
+		border-color: #ddd;
+	}
+	&:focus {
+		border-color: #ddd;
+	}
 }
 button {
-  color: #fff;
-  border: none;
-  padding: 0;
-  outline: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+	color: #fff;
+	border: none;
+	padding: 0;
+	outline: none;
+	.border-radius(3px);
 }
 .switch {
-  position: relative;
-  display: inline-block;
-  width: 70px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-.switch input {
-  display: none;
-}
-.switch:hover {
-  cursor: pointer;
+	position: relative;
+	display: inline-block;
+	width: 70px;
+	.border-radius(3px);
+	input {
+		display: none;
+	}
+	&:hover {
+		cursor: pointer;
+	}
 }
 .switch-inner {
-  overflow: hidden;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+	overflow: hidden;
+	.border-radius(3px);
 }
 .switch-inner-box {
-  height: 24px;
-  width: 116px;
+	height: 24px;
+	width: 116px;
 }
 .switch-on {
-  position: relative;
-  display: block;
-  float: left;
-  height: 24px;
-  width: 58px;
-  line-height: 24px;
-  color: #fff;
-  font-size: 14px;
-  text-indent: 10px;
-  background-color: #7ebdcb;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+	position: relative;
+	display: block;
+	float: left;
+	height: 24px;
+	width: 58px;
+	line-height: 24px;
+	color: #fff;
+	font-size: 14px;
+	text-indent: 10px;
+	background-color: #7ebdcb;
+	.user-select(none);
 }
 .switch-off {
-  position: relative;
-  display: block;
-  float: left;
-  height: 24px;
-  width: 58px;
-  line-height: 24px;
-  color: #fff;
-  font-size: 14px;
-  text-indent: 27px;
-  background-color: #cfcdc7;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+	position: relative;
+	display: block;
+	float: left;
+	height: 24px;
+	width: 58px;
+	line-height: 24px;
+	color: #fff;
+	font-size: 14px;
+	text-indent: 27px;
+	background-color: #cfcdc7;
+	.user-select(none);
 }
 .switch-handle {
-  position: absolute;
-  top: 0;
-  z-index: 999;
-  height: 24px;
-  width: 24px;
-  background-color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-.switch-handle:hover {
-  cursor: pointer;
-  cursor: -moz-grab;
+	position: absolute;
+	top: 0;
+	z-index: 999;
+	height: 24px;
+	width: 24px;
+	background-color: #fff;
+	.border-radius(3px);
+	&:hover {
+		cursor: pointer;
+		cursor: -moz-grab;
+	}
 }
 .switch_on {
-  border: 2px solid #7ebdcb;
-  background-color: #7ebdcb;
-}
-.switch_on .switch-inner-box {
-  margin-left: 0;
-}
-.switch_on .switch-handle {
-  left: 46px;
+	border: 2px solid #7ebdcb;
+	background-color: #7ebdcb;
+	.switch-inner-box {
+		margin-left: 0;
+	}
+	.switch-handle {
+		left: 46px;
+	}
 }
 .switch_off {
-  border: 2px solid #cfcdc7;
-  background-color: #cfcdc7;
-}
-.switch_off .switch-inner-box {
-  margin-left: -46px;
-}
-.switch_off .switch-handle {
-  left: 0;
-}
+	border: 2px solid #cfcdc7;
+	background-color: #cfcdc7;
+	.switch-inner-box {
+		margin-left: -46px;
+	}
+	.switch-handle {
+		left: 0;
+	}
+}*/
 header[role="banner"] {
   padding: 65px 0;
   text-align: center;

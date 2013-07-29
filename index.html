@@ -150,32 +150,32 @@
         <div class="container">
             <h2>Why Use it?</h2>
             <div class="row has-3 mobile-has-1">
-                <article class="column">
+                <div class="column">
                     <h3>Css3/html5</h3>
                     <p>Built-on CSS3 and HTML5 semantics to allow you to start captializing on a next generation standard.</p>
-                </article>
-                <article class="column">
+                </div>
+                <div class="column">
                     <h3>Customizable</h3>
                     <p>Through the simple tools, you can have whatever you want, wherever you need it.</p>
-                </article>
-                <article class="column">
+                </div>
+                <div class="column">
                     <h3>Semantic</h3>
                     <p>Everything is now semantic. Now you can have the cleanest markup without sacrificing the utility and speed of Foundation.</p>
-                </article>
+                </div>
             </div>
             <div class="row has-3 mobile-has-1">
-                <article class="column">
+                <div class="column">
                     <h3>Mobile Fisrt</h3>
                     <p>Built-on CSS3 and HTML5 semantics to allow you to start captializing on a next generation standard.</p>
-                </article>
-                <article class="column">
+                </div>
+                <div class="column">
                     <h3>Responsive</h3>
                     <p>You can define distinct ranges of screen size by a simple tools.So people visiting your site will receive a layout that's tuned to the size of their browser window.</p>
-                </article>
-                <article class="column">
+                </div>
+                <div class="column">
                     <h3>Less</h3>
                     <p>You don't have to know a ton about Less to take this class. The first hour covers an introduction, with the second hour focused on implementing it. You'll be writing Less in no time.</p>
-                </article>
+                </div>
             </div>
         </div>
     </section>
@@ -228,9 +228,8 @@
                     <div class="span-11"><p>11</p></div>
                     <div class="span-1"><p>1</p></div>
                 </div>
-            </div>
-            <p>For a simple two column layout, create a <code>row</code> and add the appropriate number of <code>span-</code> columns. As this is a 12-column grid, each <code>span-</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).
-            <pre><code data-language="html">
+                <p>For a simple two column layout, create a <code>row</code> and add the appropriate number of <code>span-</code> columns. As this is a 12-column grid, each <code>span-</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent).
+                <pre><code data-language="html">
 &lt;div&nbsp;class=&quot;row&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-1&quot;&gt;&lt;p&gt;1&lt;/p&gt;&lt;/div&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-11&quot;&gt;&lt;p&gt;11&lt;/p&gt;&lt;/div&gt;
@@ -244,6 +243,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-9&quot;&gt;&lt;p&gt;9&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
                 </code></pre>
+            </div>
             <h3>Offsetting columns</h3>
             <p>Use <code>prefix-</code> and <code>suffix-</code> to make offset, and use <code>no-spacing</code> to eliminate the gutter:</p>
             <div class="example">
@@ -252,7 +252,7 @@
                 </div>
                 <div class="row no-spacing">
                     <div class="span-6 suffix-6 tablet-span-8 tablet-suffix-4 mobile-span-5 mobile-prefix-1"><p>6 suf-6</p></div>
-                </div>              
+                </div>
                 <div class="row no-spacing">
                     <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
                     <div class="span-2 prefix-1 suffix-1"><p>pre-1 2 suf-1</p></div>
@@ -288,7 +288,7 @@
                 <div class="row center">
                     <div class="span-9"><p>9 center</p></div>
                 </div>
-                <div class="row center">s
+                <div class="row center">
                     <div class="span-11"><p>11 center</p></div>
                 </div>
                 <pre><code data-language="html">
@@ -419,10 +419,22 @@
                     <div class="column"><p>eq</p></div>
                     <div class="column"><p>eq</p></div>
                 </div>
+                <pre><code data-language="html">
+&lt;div&nbsp;class=&quot;row&nbsp;has-8&nbsp;tablet-has-4&nbsp;mobile-has-2&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&quot;&gt;&lt;p&gt;eq&lt;/p&gt;&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
             </div>
         </div>
     </section>
-    <section class="example">
+    <section>
         <div class="container">
             <h2>Phrase Grid</h2>
             <p>Different window size according to different effects.When the screen size change present different display modes</p>
