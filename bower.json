@@ -12,6 +12,8 @@
   "dependencies": {
     "prelude": "https://github.com/amazingSurge/prelude.git",
     "jquery": "~1.10.2",
-    "html5-boilerplate": "~4.2.0"
+    "html5-boilerplate": "~4.2.0",
+    "rainbow": "git@github.com:ccampbell/rainbow.git",
+    "html5shiv": "~3.6.2"
   }
 }

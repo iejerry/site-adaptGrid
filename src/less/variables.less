@@ -4,7 +4,7 @@
 
 // General --------------------------------
 
-@using-ieclasses: false;		// whether or not the markup has html5-boilerplate style IE classes in it or not
+@using-ieclasses: true;		// whether or not the markup has html5-boilerplate style IE classes in it or not
 @using-modernizr: false; 	// whether or not modernizer feature-detection classes are being used
 @disable-filters: true; 	// whether or not to disable MS-specific 'filter' properties (can make IE slow!)
 
@@ -29,7 +29,7 @@
 @pink:                  #c3325f;
 @purple:                #7a43b6;
 
-@base-fontSize:          16;//px value
+@base-fontSize:          16px;
 @base-lineHeight:        1.5;
 // @fontSize-large:         @base-fontSize * 1.25; // ~18px
 // @fontSize-small:         @base-fontSize * 0.85; // ~12px
@@ -42,10 +42,9 @@
 @base-borderRadius:      2px;
 
 
-// Semantic grid
-// --------------------------------------------------
-@spans: 12;
-@spanWidth: 60;
-@gutterWidth: 20;
+// Semantic-grid 
+@spans: 12; // px value
+@spanWidth: 60; // px value
+@gutterWidth: 20; // px value
 @gridsystemWidth: (@spanWidth*@spans) + (@gutterWidth*@spans) * 1px;
-@totalWidth: 100%;           // If you want to pixels ,@totalWidth: @gridsystemWidth;
+@totalWidth: 100%;

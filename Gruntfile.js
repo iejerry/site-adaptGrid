@@ -90,10 +90,10 @@ module.exports = function(grunt) {
         },
         {
           expand: true,
-          flatten: true,
-          cwd: 'components/prelude/less/',
+          flatten: false,
+          cwd: 'components/prelude/less',
           src: [
-              'functions/grid/grid-mixins.less',
+              'functions/grid/*.less'
           ],
           dest: 'src/less/'
         }]
@@ -109,6 +109,47 @@ module.exports = function(grunt) {
           ],
           dest: ''
         }]
+      },
+      html5shiv: {
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'components/html5shiv/dist',
+          src: [
+              'html5shiv.js'
+          ],
+          dest: 'js/'
+        }]
+      },
+      rainbow: {
+        files: [{
+          expand: true,
+          flatten: true,
+          cwd: 'components/rainbow/js',
+          src: [
+              'rainbow.min.js',
+          ],
+          dest: 'js/'
+        },
+        {
+          expand: true,
+          flatten: true,
+          cwd: 'components/rainbow/js/language',
+          src: [
+              'html.js',
+              'css.js'
+          ],
+          dest: 'js/language/'
+        },
+        {
+          expand: true,
+          flatten: true,
+          cwd: 'components/rainbow/themes',
+          src: [
+              'github.css'
+          ],
+          dest: 'src/css/themes'
+        }]
       }
     },
 
@@ -116,7 +157,10 @@ module.exports = function(grunt) {
     less: {
       site: {
         files: {
-          "src/css/grid.css": "src/less/grid.less",
+          "src/css/grid-core.css": "src/less/functions/grid/grid-core.less",
+          "src/css/grid-base.css": "src/less/functions/grid/grid-base.less",
+          "src/css/grid-equalization.css": "src/less/functions/grid/grid-equalization.less",
+          "src/css/grid-phrase.css": "src/less/functions/grid/grid-phrase.less",
           "src/css/site.css": "src/less/site.less"
         }
       },
@@ -135,7 +179,10 @@ module.exports = function(grunt) {
           'src/css/typography.css',
           'src/css/forms-core.css',
           'src/css/buttons-core.css',
-          'src/css/grid.css',
+          'src/css/grid-core.css',
+          'src/css/grid-base.css',
+          'src/css/grid-equalization.css',
+          'src/css/grid-phrase.css',
           'src/css/site.css',
           'src/css/themes/github.css'
         ],

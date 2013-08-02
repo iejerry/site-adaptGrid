@@ -1,0 +1,11 @@
+@import "init.less";
+
+#grid > .phrase (@grid-phrase-columns);
+
+@media only screen and (max-width: @grid-tablet-breakpoint) {
+	#grid > .phrase (tablet-, @grid-tablet-phrase-columns);
+}
+
+@media only screen and (max-width: @grid-mobile-breakpoint) {
+	#grid > .phrase (mobile-, @grid-mobile-phrase-columns);
+}
