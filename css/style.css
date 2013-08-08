@@ -1,4 +1,4 @@
-/*! site-adaptGrid - v0.0.1 - 2013-08-01
+/*! site-adaptGrid - v0.0.1 - 2013-08-08
 * https://github.com/amazingSurge/site-adaptGrid
 * Copyright (c) 2013 amazingSurge; Licensed  */
 
@@ -351,6 +351,157 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+/* ==========================================================================
+Helper classes
+========================================================================== */
+/*
+* Image replacement
+*/
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+
+  *text-indent: -9999px;
+}
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+.invisible {
+  visibility: hidden;
+}
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+* `contenteditable` attribute is included anywhere else in the document.
+* Otherwise it causes space to appear at the top and bottom of elements
+* that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+* `:before` to contain the top-margins of child elements.
+*/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+
+  display: table;
+  /* 2 */
+
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+* For IE 6/7 only
+* Include this rule to trigger hasLayout and contain floats.
+*/
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+Print styles.
+Inlined to avoid required HTTP connection: h5bp.com/r
+========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+  
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+  * Don't show links for images, or javascript/internal links
+  */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page  {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
 
 html {
   font-size: 100%;
@@ -460,8 +611,8 @@ h2 {
   margin-bottom: .33em;
 }
 h3 {
-  font-size: 26px;
-  font-size: 1.625rem;
+  font-size: 24px;
+  font-size: 1.5rem;
   margin-bottom: .5em;
 }
 h4 {
@@ -1111,55 +1262,16 @@ label {
   width: 83.3333%;
 }
 @media only screen and (max-width: 768px) {
-  .row .mobile-full {
-    width: 100%;
-  }
-  .row .mobile-half,
-  .row .mobile-two-fourth,
-  .row .mobile-three-sixth {
-    width: 50%;
-  }
-  .row .mobile-third,
-  .row .mobile-two-sixth {
-    width: 33.3333%;
-  }
-  .row .mobile-two-third {
-    width: 66.6666%;
-  }
-  .row .mobile-fourth {
-    width: 25%;
-  }
-  .row .mobile-three-fourth {
-    width: 75%;
-  }
-  .row .mobile-fifth {
-    width: 20%;
-  }
-  .row .mobile-two-fifth {
-    width: 40%;
-  }
-  .row .mobile-three-fifth {
-    width: 60%;
-  }
-  .row .mobile-four-fifth {
-    width: 80%;
-  }
-  .row .mobile-sixth {
-    width: 16.6666%;
-  }
-  .row .mobile-five-sixth {
-    width: 83.3333%;
-  }
-}
-@media only screen and (max-width: 480px) {
   .row .tablet-full {
     width: 100%;
   }
   .row .tablet-half,
-  .row .tablet-two-fourth {
+  .row .tablet-two-fourth,
+  .row .tablet-three-sixth {
     width: 50%;
   }
-  .row .tablet-third {
+  .row .tablet-third,
+  .row .tablet-two-sixth {
     width: 33.3333%;
   }
   .row .tablet-two-third {
@@ -1169,6 +1281,45 @@ label {
     width: 25%;
   }
   .row .tablet-three-fourth {
+    width: 75%;
+  }
+  .row .tablet-fifth {
+    width: 20%;
+  }
+  .row .tablet-two-fifth {
+    width: 40%;
+  }
+  .row .tablet-three-fifth {
+    width: 60%;
+  }
+  .row .tablet-four-fifth {
+    width: 80%;
+  }
+  .row .tablet-sixth {
+    width: 16.6666%;
+  }
+  .row .tablet-five-sixth {
+    width: 83.3333%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .row .mobile-full {
+    width: 100%;
+  }
+  .row .mobile-half,
+  .row .mobile-two-fourth {
+    width: 50%;
+  }
+  .row .mobile-third {
+    width: 33.3333%;
+  }
+  .row .mobile-two-third {
+    width: 66.6666%;
+  }
+  .row .mobile-fourth {
+    width: 25%;
+  }
+  .row .mobile-three-fourth {
     width: 75%;
   }
 }
@@ -1278,6 +1429,13 @@ header[role="banner"] p {
 .example .row p:hover {
   background-color: #d0d0d0;
   color: #fff;
+}
+.example .row .row p {
+  margin-top: 10px;
+  background-color: #d8d8d8;
+}
+.example .row .row p:hover {
+  background-color: #d0d0d0;
 }
 .example .row > * {
   margin-bottom: 10px;

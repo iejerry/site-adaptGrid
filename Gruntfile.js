@@ -85,15 +85,8 @@ module.exports = function(grunt) {
               'variables.less',
               'mixins.less',
               'mixins/*.less',
-          ],
-          dest: 'src/less/'
-        },
-        {
-          expand: true,
-          flatten: false,
-          cwd: 'components/prelude/less',
-          src: [
-              'functions/grid/*.less'
+              'functions/generator/*.less',
+              'functions/mixins/*.less'
           ],
           dest: 'src/less/'
         }]

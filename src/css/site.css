@@ -104,6 +104,13 @@ header[role="banner"] p {
   background-color: #d0d0d0;
   color: #fff;
 }
+.example .row .row p {
+  margin-top: 10px;
+  background-color: #d8d8d8;
+}
+.example .row .row p:hover {
+  background-color: #d0d0d0;
+}
 .example .row > * {
   margin-bottom: 10px;
 }

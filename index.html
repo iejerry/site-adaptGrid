@@ -133,7 +133,7 @@
                     <div class="span-4 prefix-1 suffix-1"><p>pre-1 span-4 suf-1</p></div>
                     <div class="span-4 prefix-1 suffix-1"><p>pre-1 span-4 suf-1</p></div>
                 </div>
-                <div class="row">
+                <div class="row no-spacing">
                     <div class="span-8 prefix-2 suffix-2"><p>pre-2 span-8 suf-2</p></div>
                 </div>
                 <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
@@ -146,7 +146,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;pre-1&nbsp;span-4&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;pre-1&nbsp;span-4&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&nbsp;class=&quot;row&quot;&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&nbsp;prefix-2&nbsp;suffix-2&quot;&gt;&lt;p&gt;pre-2&nbsp;span-8&nbsp;suf-2&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -172,30 +172,61 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-11&quot;&gt;&lt;p&gt;span-11&nbsp;center&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
+            <h3>Infinitely Nest columns</h3>
+            <div class="example">
+                <div class="row">
+                  <div class="span-8">8
+                    <div class="row">
+                      <div class="span-8">8 Nested
+                        <div class="row">
+                          <div class="span-8">8 Nested Again</div>
+                          <div class="span-4">4</div>
+                        </div>
+                      </div>
+                      <div class="span-4">4</div>
+                    </div>
+                  </div>
+                  <div class="span-4">4</div>
+                </div>
+                <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&quot;&gt;8
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&quot;&gt;8&nbsp;Nested
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&quot;&gt;8&nbsp;Nested&nbsp;Again&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&quot;&gt;4&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&quot;&gt;4&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&quot;&gt;4&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
             <h3>Responsive</h3>
             <p>Resize the browser to see the example layouts change. There is two breakpoints currently.</p>
             <p>For tablet device, you can add <code>tablet-</code> prefix to the previous classes. e.g: <code>tablet-span-x</code>, <code>tablet-prefix-x</code>, <code>tablet-suffix-x</code>.</p>
             <p>The mobile is the same: <code>mobile-span-x</code>, <code>mobile-prefix-x</code>, <code>mobile-suffix-x</code>.</p>
             <div class="example">
                 <div class="row">
-                    <div class="span-4 tablet-span-10 prefix-1 suffix-1"><p>s-4 tablet-s-10 pre-1 suf-1</p></div>
-                    <div class="span-3 tablet-span-6 mobile-span-2"><p>s-3 tablet-s-6 mobile-s-2</p></div>
-                    <div class="span-3 tablet-span-6 mobile-span-4"><p>s-3 tablet-s-6 mobile-s-4</p></div>
+                    <div class="span-4 tablet-span-10 prefix-1 suffix-1"><p>s-4 tablet-s-8 pre-1 suf-1</p></div>
+                    <div class="span-3 tablet-span-6 mobile-span-2"><p>s-3 tablet-s-5 mobile-s-2</p></div>
+                    <div class="span-3 tablet-span-6 mobile-span-4"><p>s-3 tablet-s-5 mobile-s-4</p></div>
                 </div>
                 <div class="row">
-                    <div class="span-4 tablet-span-10 tablet-prefix-2"><p>s-4 tablet-s-10 tablet-pre-2</p></div>
-                    <div class="span-4 tablet-span-7 mobile-span-3"><p>s-4 tablet-s-7 mobile-s-3</p></div>
-                    <div class="span-4 tablet-span-5 mobile-span-3"><p>s-4 tablet-s-5 mobile-s-3</p></div>
+                    <div class="span-4 tablet-span-10 tablet-prefix-2"><p>s-4 tablet-s-8 tablet-pre-2</p></div>
+                    <div class="span-4 tablet-span-7 mobile-span-3"><p>s-4 tablet-s-6 mobile-s-3</p></div>
+                    <div class="span-4 tablet-span-5 mobile-span-3"><p>s-4 tablet-s-4 mobile-s-3</p></div>
                 </div>
                 <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-10&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-10&nbsp;pre-1&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-6&nbsp;mobile-span-2&quot;&gt;&lt;p&gt;s-3&nbsp;tablet-s-6&nbsp;mobile-s-2&lt;/p&gt;&lt;/div&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-6&nbsp;mobile-span-4&quot;&gt;&lt;p&gt;s-3&nbsp;tablet-s-6&nbsp;mobile-s-4&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-8&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-10&nbsp;pre-1&nbsp;suf-1&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-5&nbsp;mobile-span-2&quot;&gt;&lt;p&gt;s-3&nbsp;tablet-s-6&nbsp;mobile-s-2&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-3&nbsp;tablet-span-5&nbsp;mobile-span-4&quot;&gt;&lt;p&gt;s-3&nbsp;tablet-s-6&nbsp;mobile-s-4&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;
 &lt;div&nbsp;class=&quot;row&quot;&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-10&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-10&nbsp;tablet-pre-2&lt;/p&gt;&lt;/div&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-7&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-7&nbsp;mobile-sn-3&lt;/p&gt;&lt;/div&gt;
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-5&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-5&nbsp;mobile-s-3&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-8&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-10&nbsp;tablet-pre-2&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-6&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-7&nbsp;mobile-sn-3&lt;/p&gt;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;tablet-span-4&nbsp;mobile-span-3&quot;&gt;&lt;p&gt;s-4&nbsp;tablet-s-5&nbsp;mobile-s-3&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
         </div>
@@ -282,6 +313,38 @@
 &lt;/div&gt;</code></pre>
             </div>
             <p>The classes are: <code>full</code>, <code>half</code>, <code>two-fourth</code>, <code>three-sixth</code>, <code>third</code>, <code>two-sixth</code>, <code>two-third</code>, <code>fourth</code>, <code>three-fourth</code>, <code>fifth</code>, <code>two-fifth</code>, <code>three-fifth</code>, <code>four-fifth</code>, <code>sixth</code>, <code>five-sixth</code>.</p>
+            <h3>Infinitely Nest columns</h3>
+            <div class="example">
+                <div class="row">
+                  <div class="column two-third">two-third
+                    <div class="row">
+                      <div class="column two-third">two-third
+                        <div class="row">
+                          <div class="column half">half</div>
+                          <div class="column half">half</div>
+                        </div>
+                      </div>
+                      <div class="column third">third</div>
+                    </div>
+                  </div>
+                  <div class="column third">third</div>
+                </div>
+                <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;two-third&quot;&gt;two-third
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;two-third&quot;&gt;two-third
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;row&quot;&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;half&quot;&gt;half&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;half&quot;&gt;half&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;third&quot;&gt;third&lt;/div&gt;
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;/div&gt;
+&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;third&quot;&gt;third&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            <h3>Responsive</h3>
             <p>You can add <code>table-</code> and <code>mobile-</code> prefix to make them adapt different viewports.</p>
             <div class="example">
                 <div class="row">
@@ -297,6 +360,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;column&nbsp;fourth&nbsp;tablet-half&nbsp;mobile-full&quot;&gt;&lt;p&gt;fourth&nbsp;tablet-half&nbsp;mobile-full&lt;/p&gt;&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
+            <p>Adapt grid system uses fluid item widths and fixed gutters.</p>
+            <p>The column widths have percentage values, and the gutters have px values.</p>
         </div>
     </section>
     <section class="shaded">
