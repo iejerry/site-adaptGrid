@@ -11,7 +11,7 @@ body > section {
   background: #fafafa;
 }
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   font-weight: 300;
   color: #777;
 }
@@ -95,6 +95,7 @@ header[role="banner"] p {
   line-height: 2em;
   text-align: center;
   background-color: #e9e9e9;
+  border: 1px solid #d1d1d1;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .example .row > *:hover {

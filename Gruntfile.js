@@ -150,11 +150,7 @@ module.exports = function(grunt) {
     less: {
       site: {
         files: {
-          "src/css/grid-core.css": "src/less/functions/grid/grid-core.less",
-          "src/css/grid-base.css": "src/less/functions/grid/grid-base.less",
-          "src/css/grid-equalization.css": "src/less/functions/grid/grid-equalization.less",
-          "src/css/grid-phrase.css": "src/less/functions/grid/grid-phrase.less",
-          "src/css/site.css": "src/less/site.less"
+          "src/css/grid-full.css": "src/less/functions/generator/full.less",
         }
       },
     },
@@ -172,10 +168,7 @@ module.exports = function(grunt) {
           'src/css/typography.css',
           'src/css/forms-core.css',
           'src/css/buttons-core.css',
-          'src/css/grid-core.css',
-          'src/css/grid-base.css',
-          'src/css/grid-equalization.css',
-          'src/css/grid-phrase.css',
+          'src/css/grid-full.css',
           'src/css/site.css',
           'src/css/themes/github.css'
         ],

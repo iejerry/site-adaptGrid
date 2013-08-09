@@ -135,32 +135,32 @@
 &lt;/div&gt;</code></pre>
             </div>
             <h3>Offsetting columns</h3>
-            <p>Offsets allow you to create additional space between columns in a row. Like the rest of the grid, they're nestable. You can use classes like <code>prefix-4</code> and <code>suffix-8</code> to manipulate your column positions in different ways. You can offset up to 11 since you wouldn't ever offset a full-width column. Also you can add <code>no-spacing</code> class to eliminate the gutter.</p>
+            <p>Offsets allow you to create additional space between columns in a row. Like the rest of the grid, they're nestable. You can use classes like <code>prefix-4</code> and <code>suffix-8</code> to manipulate your column positions in different ways. You can offset up to 11 since you wouldn't ever offset a full-width column. Also you can add <code>no-gutter</code> class to eliminate the gutter.</p>
             <div class="example">
-                <div class="row no-spacing">
+                <div class="row no-gutter">
                     <div class="span-6 prefix-6">pre-6 span-6</div>
                 </div>
-                <div class="row no-spacing">
+                <div class="row no-gutter">
                     <div class="span-6 suffix-6">span-6 suf-6</div>
                 </div>
-                <div class="row no-spacing">
+                <div class="row no-gutter">
                     <div class="span-4 prefix-1 suffix-1">pre-1 span-4 suf-1</div>
                     <div class="span-4 prefix-1 suffix-1">pre-1 span-4 suf-1</div>
                 </div>
-                <div class="row no-spacing">
+                <div class="row no-gutter">
                     <div class="span-8 prefix-2 suffix-2">pre-2 span-8 suf-2</div>
                 </div>
-                <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+                <pre><code data-language="html">&lt;div&nbsp;class=&quot;row&nbsp;no-gutter&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-6&nbsp;prefix-6&quot;&gt;pre-6&nbsp;span-6&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;no-gutter&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-6&nbsp;suffix-6&quot;&gt;span-6&nbsp;suf-6&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;no-gutter&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;pre-1&nbsp;span-4&nbsp;suf-1&lt;/div&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-4&nbsp;prefix-1&nbsp;suffix-1&quot;&gt;pre-1&nbsp;span-4&nbsp;suf-1&lt;/div&gt;
 &lt;/div&gt;
-&lt;div&nbsp;class=&quot;row&nbsp;no-spacing&quot;&gt;
+&lt;div&nbsp;class=&quot;row&nbsp;no-gutter&quot;&gt;
 &nbsp;&nbsp;&nbsp;&nbsp;&lt;div&nbsp;class=&quot;span-8&nbsp;prefix-2&nbsp;suffix-2&quot;&gt;pre-2&nbsp;span-8&nbsp;suf-2&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
@@ -402,11 +402,11 @@ article {
 aside {
 &nbsp;&nbsp;&nbsp;&nbsp;#semantic&nbsp;&gt;&nbsp;.span(4);
 }</code></pre>
-                <h3>Push and Pull</h3>
-                <p>The <code>.push()</code> and <code>.pull()</code> mixins allow you apply left and right indents to your columns.</p>
+                <h3>Prefix and Suffix</h3>
+                <p>The <code>.prefix()</code> and <code>.suffix()</code> mixins allow you apply left and right indents to your columns.</p>
                 <pre><code data-language="css">// LESS
 article {
-&nbsp;&nbsp;&nbsp;.push(2);
+&nbsp;&nbsp;&nbsp;.prefix(2);
 }
 
 // Compiled CSS
@@ -415,7 +415,7 @@ article {
 }</code></pre>
                 <pre><code data-language="css">// LESS
 article {
-&nbsp;&nbsp;&nbsp;.pull(2);
+&nbsp;&nbsp;&nbsp;.suffix(2);
 }
 
 // Compiled CSS
@@ -433,14 +433,14 @@ article {
             <div class="example">
                 <p>If you are using the CSS:</p>
                 <pre><code data-language="html">//&nbsp;CSS
-&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/grid.css&quot;&gt;</code></pre>
+&lt;link&nbsp;rel=&quot;stylesheet&quot;&nbsp;href=&quot;css/grid-full.css&quot;&gt;</code></pre>
                 <p>But if you are using the LESS:</p>
-                <p>You should import the <span>mixins</span> file</p>
+                <p>You should import the mixins file</p>
                 <pre><code data-language="css">// import
-@import&nbsp;&quot;less/mixins.less&quot;;</code></pre>
+@import&nbsp;&quot;adaptGrid/mixins.less&quot;;</code></pre>
                 <p>And link the grid</p>
                 <pre><code data-language="html">//&nbsp;LESS
-&lt;link&nbsp;rel=&quot;stylesheet/less&quot;&nbsp;type=&quot;text/css&quot;&nbsp;href=&quot;less/grid.less&quot;&gt;</code></pre>
+&lt;link&nbsp;rel=&quot;stylesheet/less&quot;&nbsp;type=&quot;text/css&quot;&nbsp;href=&quot;adaptGrid/grid.less&quot;&gt;</code></pre>
             </div>
             <p>Do this all, you can use the grid system in you site. Just like that introduced before.</p>
             <h4><a href="https://github.com/amazingSurge/adaptGrid"> Clone or fork via GitHub</a></h4>
